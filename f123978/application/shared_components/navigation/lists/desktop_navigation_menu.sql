@@ -19,7 +19,7 @@ wwv_flow_api.create_list(
 wwv_flow_api.create_list_item(
  p_id=>wwv_flow_api.id(702639701267316195)
 ,p_list_item_display_sequence=>10
-,p_list_item_link_text=>'demo Home'
+,p_list_item_link_text=>'demo Home Changes'
 ,p_list_item_link_target=>'f?p=&APP_ID.:1:&SESSION.::&DEBUG.::::'
 ,p_list_item_icon=>'fa-home'
 ,p_list_item_current_type=>'TARGET_PAGE'
@@ -72,6 +72,14 @@ wwv_flow_api.create_list_item(
 ,p_list_item_link_target=>'f?p=&APP_ID.:7:&APP_SESSION.::&DEBUG.:::'
 ,p_list_item_current_type=>'COLON_DELIMITED_PAGE_LIST'
 ,p_list_item_current_for_pages=>'7,8'
+);
+wwv_flow_api.create_list_item(
+ p_id=>wwv_flow_api.id(3262068338670303838)
+,p_list_item_display_sequence=>80
+,p_list_item_link_text=>'Demo Page'
+,p_list_item_link_target=>'f?p=&APP_ID.:9:&APP_SESSION.::&DEBUG.:::'
+,p_list_item_current_type=>'COLON_DELIMITED_PAGE_LIST'
+,p_list_item_current_for_pages=>'9'
 );
 wwv_flow_api.component_end;
 end;

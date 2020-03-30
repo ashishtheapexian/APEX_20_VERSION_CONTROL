@@ -14,7 +14,7 @@ wwv_flow_api.component_begin (
 wwv_flow_api.create_flow(
  p_id=>wwv_flow.g_flow_id
 ,p_owner=>nvl(wwv_flow_application_install.get_schema,'ASHISH_ME')
-,p_name=>nvl(wwv_flow_application_install.get_application_name,'APEX 20.1')
+,p_name=>nvl(wwv_flow_application_install.get_application_name,'APEX 20.1 | New changes')
 ,p_alias=>nvl(wwv_flow_application_install.get_application_alias,'APEX-20-110')
 ,p_page_view_logging=>'YES'
 ,p_page_protection_enabled_y_n=>'Y'
@@ -34,12 +34,13 @@ wwv_flow_api.create_flow(
 ,p_authentication_id=>wwv_flow_api.id(701290825018316024)
 ,p_application_tab_set=>1
 ,p_logo_type=>'T'
-,p_logo_text=>'APEX 20.1'
+,p_logo_text=>'APEX 20.1 | New Changes'
 ,p_app_builder_icon_name=>'app-icon.svg'
 ,p_proxy_server=>nvl(wwv_flow_application_install.get_proxy,'')
 ,p_no_proxy_domains=>nvl(wwv_flow_application_install.get_no_proxy_domains,'')
-,p_flow_version=>'Release 1.0'
+,p_flow_version=>'Release 2.0'
 ,p_flow_status=>'AVAILABLE_W_EDIT_LINK'
+,p_flow_unavailable_text=>'This application is currently unavailable at this time.'
 ,p_exact_substitutions_only=>'Y'
 ,p_browser_cache=>'N'
 ,p_browser_frame=>'D'
@@ -49,7 +50,7 @@ wwv_flow_api.create_flow(
 ,p_substitution_string_01=>'APP_NAME'
 ,p_substitution_value_01=>'APEX 20.1'
 ,p_last_updated_by=>'ASHISH'
-,p_last_upd_yyyymmddhh24miss=>'20200330183234'
+,p_last_upd_yyyymmddhh24miss=>'20200330191131'
 ,p_file_prefix => nvl(wwv_flow_application_install.get_static_app_file_prefix,'')
 ,p_files_version=>3
 ,p_ui_type_name => null
